@@ -1,0 +1,86 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Rose Land-Landscaping and Vertical Garden</title>
+    <meta name="description" content="Rose Land farm and nursery, we are in to growing ornamental and foliage plants">
+    <meta name="author" content="Sridhar V">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/semantic.css'>
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+
+<body>
+    <!--Start: Nav  -->
+    <div class="ui fixed borderless huge menu">
+
+        <div class="ui container grid">
+
+            <!--Start: Desktop Nav-->
+            <div class="computer only row">
+                <a class="header item" href="index.html">Rose Land</a>
+                <a class="item" href="index.html">Plants Gallery</a>
+                <a class="item" href="rare_varieties.html">Rare Varieties</a>
+                <a class="active item" href="#">Landscaping and Vertical Garden</a>
+                <a class="item" href="aboutus.html">About Us</a>
+                <a class="item" href="location.html">Location</a>
+                <a class="item" href="contactus.html">Contact Us</a>
+            </div>
+            <!--End: Desktop Nav-->
+
+            <!--Start: Mobile Nav-->
+            <div class="tablet mobile only row">
+                <a class="header item"> Rose Land</a>
+                <div class="right menu">
+                    <a class="menu item">
+                        <div class="ui basic icon toggle button">
+                            <i class="content icon"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="ui vertical accordion borderless fluid menu">
+                    <a class="item" href="index.html">Plants Gallery</a>
+                    <a class="item" href="rare_varieties.html">Rare Varieties</a>
+                    <a class="active item" href="#">Landscaping and Vertical
+                        Garden</a>
+                    <a class="item" href="aboutus.html">About Us</a>
+                    <a class="item" href="location.html">Location</a>
+                    <a class="item" href="contactus.html">Contact Us</a>
+                </div>
+            </div>
+            <!--End: Mobile Nav-->
+        </div>
+    </div>
+    <!--End: Nav  -->
+    <!--Start:Content-->
+    <div class="ui container">
+    </div>
+    <!--End:Content-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/semantic.js'></script>
+    <script>
+        $(document).ready(function () {
+            $('.computer.only .dropdown.item')
+                .popup({
+                    inline: true,
+                    hoverable: true,
+                    position: 'bottom left',
+                    delay: {
+                        show: 300,
+                        hide: 800
+                    }
+                });
+            $('.ui.dropdown').dropdown();
+            $('.ui.accordion').accordion();
+
+            // bind "hide and show vertical menu" event to top right icon button
+            $('.ui.toggle.button').click(function () {
+                $('.ui.vertical.menu').toggle("250", "linear")
+            });
+        });
+    </script>
+</body>
+
+</html>

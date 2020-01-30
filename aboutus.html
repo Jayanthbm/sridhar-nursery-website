@@ -1,0 +1,159 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Rose Land-About Us</title>
+    <meta name="description" content="Rose Land farm and nursery, we are in to growing ornamental and foliage plants">
+    <meta name="author" content="Sridhar V">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/semantic.css'>
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+
+<body>
+    <!--Start: Nav  -->
+    <div class="ui fixed borderless huge menu">
+
+        <div class="ui container grid">
+
+            <!--Start: Desktop Nav-->
+            <div class="computer only row">
+                <a class="header item" href="index.html">Rose Land</a>
+                <a class="item" href="index.html">Plants Gallery</a>
+                <a class="item" href="rare_varieties.html">Rare Varieties</a>
+                <a class="item" href="landscapping_and_vertical_garden.html">Landscaping and Vertical Garden</a>
+                <a class="active item" href="#">About Us</a>
+                <a class="item" href="location.html">Location</a>
+                <a class="item" href="contactus.html">Contact Us</a>
+            </div>
+            <!--End: Desktop Nav-->
+
+            <!--Start: Mobile Nav-->
+            <div class="tablet mobile only row">
+                <a class="header item"> Rose Land</a>
+                <div class="right menu">
+                    <a class="menu item">
+                        <div class="ui basic icon toggle button">
+                            <i class="content icon"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="ui vertical accordion borderless fluid menu">
+                    <a class="item" href="plants_gallery.html">Plants Gallery</a>
+                    <a class="item" href="rare_varieties.html">Rare Varieties</a>
+                    <a class="item" href="landscapping_and_vertical_garden.html">Landscaping and Vertical Garden</a>
+                    <a class="active item" href="#">About Us</a>
+                    <a class="item" href="location.html">Location</a>
+                    <a class="item" href="contactus.html">Contact Us</a>
+                </div>
+            </div>
+            <!--End: Mobile Nav-->
+        </div>
+    </div>
+    <!--End: Nav  -->
+    <!--Start:Content-->
+    <div class="ui container">
+        <div class="ui three column stackable grid">
+            <div class="eight wide column">
+                <span>
+                    <h2>About Us</h2>
+                    <span style="font-size: large;">
+                        <p>Rose Land farm and nursery, we are in to growing ornamental and foliage plants since 1989.
+                        </p>
+                        <p>Presently we grow plants in 8 acres of land . We are one of the biggest plant growers in
+                            Bangalore</p>
+                        <p>We produce bulk indoor and outdoor landscaping, ornamental and foliage plants. We grow new
+                            varieties of ornamental plants in bulk as per our customer needs every year.</p>
+                        <p>We are placed in the neighbourhood of Big Banyan tree Bangalore (Doddaalladamara), 
+                            To visit our plant display and for sales please visit our plot for display and sales of
+                            varieties of plants available with us, which is grown all accross our other production farms
+                            and nurseries owned by us.</p>
+                    </span>
+                </span>
+            </div>
+            <div class="four wide column">
+                <h2>Owner</h2>
+                <div class="ui card">
+                    <div class="image">
+                        <img src="/images/avatar2/large/kristy.png" alt="Sridhar Photo">
+                    </div>
+                    <div class="content">
+                        <a class="header">Sridhar V Reddy</a>
+                        <div class="description">
+                            <i class="phone volume icon"></i><a href="tel:+919611666156">+919611666156</a><br /><br />
+                            <i class="phone volume icon"></i><a href="tel:08028485660">080-28485660</a><br /><br />
+                            <i class="inbox icon"></i><a href="mailto:sridhar9009reddy@gmail.com?Subject=Hello"
+                                target="_top">sridhar9009reddy@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="four wide column">
+                <span>
+                    <h3>How to reach us</h3>
+                    <b>
+                        <h4>Address</h4>
+                    </b>
+                    <span style="font-weight: bold;">Unit 1:</span>
+                    <address>
+                        Kommaghatta Village,Sulikere Post,<br />
+                        Near Byrohalli,Kengeri Hobli , Bangalore<br />560060
+                    </address>
+                    <br />
+                    <span style="font-weight: bold;">Unit 2:</span>
+                    <address>
+                        Ramohalli Village,Big Banyan Main Road,<br />
+                        Kengeri Hobli , Bangalore<br />560074
+                    </address>
+                    <br />
+                    <b>Please post your requirements to our
+                        Whatsapp number</b>
+                    <br />
+                    <br />
+                    <b>
+                        We are a whole sale plants nursery
+                    </b>
+                    <br />
+                    <br />
+                    <span style="font-size: xx-large;">
+                        +919611666156
+                    </span>
+                    <br />
+                    <br />
+                    <span>
+                        <h3>Email:</h3>
+                        <p>sridhar9009reddy@gmail.com</p>
+                    </span>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!--End: Content-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/semantic.js'></script>
+    <script>
+        $(document).ready(function () {
+            $('.computer.only .dropdown.item')
+                .popup({
+                    inline: true,
+                    hoverable: true,
+                    position: 'bottom left',
+                    delay: {
+                        show: 300,
+                        hide: 800
+                    }
+                });
+            $('.ui.dropdown').dropdown();
+            $('.ui.accordion').accordion();
+
+            // bind "hide and show vertical menu" event to top right icon button
+            $('.ui.toggle.button').click(function () {
+                $('.ui.vertical.menu').toggle("250", "linear")
+            });
+        });
+    </script>
+</body>
+
+</html>

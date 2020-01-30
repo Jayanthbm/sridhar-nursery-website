@@ -1,0 +1,118 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Rose Land-Contact Us</title>
+    <meta name="description" content="Rose Land farm and nursery, we are in to growing ornamental and foliage plants">
+    <meta name="author" content="Sridhar V">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/semantic.css'>
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+
+<body>
+    <!--Start: Nav  -->
+    <div class="ui fixed borderless huge menu">
+
+        <div class="ui container grid">
+
+            <!--Start: Desktop Nav-->
+            <div class="computer only row">
+                <a class="header item" href="index.html">Rose Land</a>
+                <a class="item" href="index.html">Plants Gallery</a>
+                <a class="item" href="rare_varieties.html">Rare Varieties</a>
+                <a class="item" href="landscapping_and_vertical_garden.html">Landscaping and Vertical Garden</a>
+                <a class="item" href="aboutus.html">About Us</a>
+                <a class="item" href="location.html">Location</a>
+                <a class="active item" href="#">Contact Us</a>
+            </div>
+            <!--End: Desktop Nav-->
+
+            <!--Start: Mobile Nav-->
+            <div class="tablet mobile only row">
+                <a class="header item"> Rose Land</a>
+                <div class="right menu">
+                    <a class="menu item">
+                        <div class="ui basic icon toggle button">
+                            <i class="content icon"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="ui vertical accordion borderless fluid menu">
+                    <a class="item" href="index.html">Plants Gallery</a>
+                    <a class="item" href="rare_varieties.html">Rare Varieties</a>
+                    <a class="item" href="landscapping_and_vertical_garden.html">Landscaping and Vertical Garden</a>
+                    <a class="item" href="aboutus.html">About Us</a>
+                    <a class="item" href="location.html">Location</a>
+                    <a class="active item" href="#">Contact Us</a>
+                </div>
+            </div>
+            <!--End: Mobile Nav-->
+        </div>
+    </div>
+    <!--End: Nav  -->
+    <!--Start:Content-->
+    <div class="ui container">
+        <span>
+            <h3>Reaching here</h3>
+            <p>From Bangalore International Airport - 65 Km</p>
+            <p>From City Market - 30 Km</p>
+            <p>From Bangalore City Railway station - 30 Km</p>
+            <p>From Lalbagh Botanical Gardan Bangalore - 28 Km</p>
+            <p>We are located 8 Km Off Bangalore Mysore highway road towards BigBanyan Tree (Dodda alladamara)</p>
+        </span>
+        <br /><br /><br /><br /><br /><br />
+        <span>
+            <h3>Contact</h3>
+            <span style="font-weight: bold;">Unit 1:</span>
+            <address>
+                Kommaghatta Village,Sulikere Post,<br />
+                Near Byrohalli,Kengeri Hobli , Bangalore<br />560060
+            </address>
+            <span style="font-weight: bold;">Unit 2:</span>
+            <address>
+                Ramohalli Village,Big Banyan Main Road,<br />
+                Kengeri Hobli , Bangalore<br />560074
+            </address>
+        </span>
+        <br />
+        <span><i class="phone volume icon"></i><a href="tel:+919611666156">+919611666156</a></span>
+        <span><i class="phone volume icon"></i><a href="tel:08028485660">080-28485660</a></span>
+        <br />
+        <span><i class="inbox icon"></i><a href="mailto:sridhar9009reddy@gmail.com?Subject=Hello"
+                target="_top">sridhar9009reddy@gmail.com</a></span>
+        <hr />
+        <br /> <br />
+        <span>
+            <h3>Contact Form</h3>
+        </span>
+    </div>
+    <!--End:Content-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/semantic.js'></script>
+    <script>
+        $(document).ready(function () {
+            $('.computer.only .dropdown.item')
+                .popup({
+                    inline: true,
+                    hoverable: true,
+                    position: 'bottom left',
+                    delay: {
+                        show: 300,
+                        hide: 800
+                    }
+                });
+            $('.ui.dropdown').dropdown();
+            $('.ui.accordion').accordion();
+
+            // bind "hide and show vertical menu" event to top right icon button
+            $('.ui.toggle.button').click(function () {
+                $('.ui.vertical.menu').toggle("250", "linear")
+            });
+        });
+    </script>
+</body>
+
+</html>
