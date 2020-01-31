@@ -181,3 +181,17 @@ body {
     background-color: #555;
     /* Add a dark-grey background on hover */
 }
+
+.mheading {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .mheading {
+        display: block;
+        font-size: larger;
+        text-align: center;
+        font-weight: bolder;
+        line-height: 1;
+    }
+}
